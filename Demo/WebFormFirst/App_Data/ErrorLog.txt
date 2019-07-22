@@ -1,0 +1,46 @@
+********** 2019/7/21 20:32:43 **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: Error Page
+Stack Trace: 
+********** 2019/7/21 20:36:49 **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: An InvalidOperationException occurred in the Page_Load handler on the Default.aspx page.
+Inner Source: WebFormFirst
+Inner Stack Trace: 
+   在 WebFormFirst._Default.Page_Load(Object sender, EventArgs e) 位置 D:\codes\learning\Demo\WebFormFirst\Default.aspx.cs:行号 14
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: 引发类型为“System.Web.HttpUnhandledException”的异常。
+Source: Application_Error - Global.asax
+Stack Trace: 
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 2019/7/21 20:39:22 **********
+Exception Type: System.InvalidOperationException
+Exception: An InvalidOperationException occurred in the Page_Load handler on the Default.aspx page.
+Source: Page_Error - Default.aspx
+Stack Trace: 
+   在 WebFormFirst._Default.Page_Load(Object sender, EventArgs e) 位置 D:\codes\learning\Demo\WebFormFirst\Default.aspx.cs:行号 14
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 2019/7/21 20:46:09 **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 

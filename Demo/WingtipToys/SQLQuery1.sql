@@ -1,0 +1,6 @@
+﻿use master
+go
+alter database WINGTIPTOYS_4443da5ea5fd43e6a2ba4a5826a5db85 set single_user with rollback immediate
+go
+drop database WINGTIPTOYS_4443da5ea5fd43e6a2ba4a5826a5db85
+go
