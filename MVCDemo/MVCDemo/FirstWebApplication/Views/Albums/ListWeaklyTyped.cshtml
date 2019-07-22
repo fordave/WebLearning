@@ -1,0 +1,24 @@
+@using FirstWebApplication.Models;
+@{
+    ViewBag.Title = "AlbumsWeaklyList";
+}
+<h2>@ViewBag.Title</h2>
+<table border="1" cellpadding="20" cellspacing="20">
+    @foreach (Album p in (ViewBag.Albums as IEnumerable<Album>))
+    {
+    <tr>
+        <td>@p.Title</td>
+
+        <td>@p.Title</td>
+        <td>@p.Title</td>
+    </tr>
+    }
+</table>
+
+<ul>
+
+    @foreach (dynamic p in ViewBag.Albums)
+    {
+        <li>@p.Title</li>
+    }
+</ul>

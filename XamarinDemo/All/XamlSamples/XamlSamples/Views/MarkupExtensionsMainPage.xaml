@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamlSamples.Views.MarkupExtensionsMainPage"
+             xmlns:views="clr-namespace:XamlSamples.Views"
+             
+             Title="Markup Extensions" Padding="10">
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection>
+                <TextCell Text="x:Static Demo" Detail="Access constants or statics" 
+                          Command="{Binding NavigateCommand}" 
+                          CommandParameter="{x:Type views:StaticDemoPage}" />
+                <TextCell Text="x:Reference Demo" Detail="Reference named elements on the page" 
+                          Command="{Binding NavigateCommand}" 
+                          CommandParameter="{x:Type views:ReferenceDemoPage}" />
+                <TextCell Text="x:Type Demo" Detail="Associate a Button with a Type" 
+                          Command="{Binding NavigateCommand}" 
+                          CommandParameter="{x:Type views:TypeDemoPage}" />
+                <TextCell Text="x:Array Demo" Detail="Use an array to fill a ListView" 
+                          Command="{Binding NavigateCommand}" 
+                          CommandParameter="{x:Type views:ArrayDemoPage}" />
+                <TextCell Text="x:Null Demo" Detail="display null extention and onplatform extention" 
+                          Command="{Binding NavigateCommand}" 
+                          CommandParameter="{x:Type views:NullDemoPage}" />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>
